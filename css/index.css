@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* 总区域 */
+table{
+    width: 693px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table td{
+    border: 2px solid #ccc;
+    text-align: center;
+    width: 90px;
+    height: 110px;
+}
+
+td:first-child{
+    width: 70px;
+}
+
+/* 标题caption区域 */
+table caption{
+    padding: 3px;
+    border: solid 2px #ccc;
+    border-bottom: none;
+    width: 693px;
+    height: 94px;
+    line-height: 94px;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: lightblue;
+}
+
+/* thead区域 */
+table thead td{
+    background-color: #e4e1e1;
+    height: 50px;
+}
+table thead tr td:nth-child(2){
+    width: 70px ;
+}
+table thead tr td:last-child{
+    width: 70px;
+}
+
+/* tbody区域 */
+table tbody tr td:first-child{
+    background-color: #e4e1e1;
+}
+
+
+
+
+
+/* 设置星期-节次 */
+thead td:first-child{
+    position: relative;
+    background-color: transparent;
+}
+
+thead .week{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 16px;
+}
+
+thead .section{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 16px;
+}
+
+thead img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

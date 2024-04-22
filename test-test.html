@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid black;
+        /* 设置单元格边框样式 */
+        padding: 10px;
+        /* 设置单元格内边距 */
+        position: relative;
+        /* 设置定位为相对定位 */
+    }
+
+    .diagonal-line {
+        position: relative;
+        /* 设置定位为相对定位 */
+    }
+
+    .diagonal-line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid black;
+        /* 设置斜线的样式 */
+        transform: rotate(-45deg);
+        /* 旋转斜线 */
+        z-index: 1;
+        /* 确保斜线在文字下方 */
+    }
+
+    .text-top {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* 使文字在斜线上方 */
+    }
+
+    .text-bottom {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        /* 使文字在斜线下方 */
+    }
+</style>
+</head>
+
+<body>
+
+    <table border="1">
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="diagonal-line">
+                <div class="text-top">星期</div>
+                <div class="text-bottom">节次</div>
+            </td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格6</td>
+            <td>单元格7</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

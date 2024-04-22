@@ -1,0 +1,232 @@
+
+/* 统一设置课程name、地点place、时间time的样式 */
+.name{
+    border-bottom: dashed 2px ;
+    height: 50px;
+}
+
+.place{
+    height: 38px;
+    border-bottom: dashed 2px ;
+    line-height: 38px;
+}
+
+.time{
+    height: 22px;
+    font-weight: bold;
+}
+
+/* 设置合并后的格式 */
+.merged{
+    outline: 2px solid black ;
+}
+
+/* 设置三个横向row单元格的合并格式 */
+table .three{
+    width: 90px;
+    height: 330px;
+}
+
+.three .name{
+    height: 150px;
+}
+
+.three .place{
+    height: 114px;
+    line-height: 114px;
+}
+
+.three .time{
+    height: 66px;
+    line-height: 66px;
+}
+
+/* 设置两个横向row单元格的合并格式 */
+table .two{
+    width: 90px;
+    height: 220px;
+}
+
+.two .name{
+    height: 100px;
+}
+
+.two .place{
+    height: 76px;
+    line-height: 76px;
+}
+
+.two .time{
+    height: 44px;
+    line-height: 44px;
+}
+
+
+/* 遥感原理 */
+.remote-theory{
+    width: 90px;
+    height: 110px;
+    background: #e6194B;
+    color: black;
+    text-align: center;
+}
+
+.remote-theory .name{
+    padding-top: 4px;
+}
+
+/* GIS应用开发 */
+.GIS-develop{
+    width: 90px;
+    height: 110px;
+    background: #3cb44b;
+    opacity: 0.3;
+    color: black;
+    text-align: center; 
+}
+
+.GIS-develop .name{
+    line-height: 50px;
+}
+
+.fontAlign .name{
+    line-height: 150px;
+}
+
+/* 计算机图形学 */
+.computer-graphics{
+    width: 90px;
+    height: 110px;
+    background: #ffe119;
+    opacity: 0.3;
+    color: black;
+    text-align: center; 
+}
+
+.cg-vertical-align{
+    padding-top: 30px;
+}
+
+/* 大数据与云计算 */
+.bigData{
+    width: 90px;
+    height: 110px;
+    background: #4363d8;
+    color: black;
+    text-align: center; 
+}
+
+.bigData .name{
+    padding-top: 60px;
+}
+
+.bigData .bd-align{
+    padding-top: 30px;
+}
+
+/* 遥感地学分析 */
+.remote-geoScience{
+    width: 90px;
+    height: 110px;
+    background: #f58231;
+    opacity: 0.3;
+    color: black;
+    text-align: center; 
+}
+
+.remote-geoScience .name{
+    padding-top: 30px;
+}
+
+.remote-geoScience .rg-format{
+    line-height: normal;
+}
+
+.qaq{
+    border-top: solid 1px #897c7c;
+    padding: 3px;
+}
+
+/* 误差理论与测量平差 */
+.error-theory{
+    width: 90px;
+    height: 110px;
+    background: #911eb4;
+    color: black;
+    text-align: center; 
+}
+
+.error-theory .name{
+    padding-top: 30px;
+}
+
+/* 形式与政策 */
+.form-policy{
+    width: 90px;
+    height: 110px;
+    background: #a35a5a;
+    opacity: 0.3;
+    color: black;
+    text-align: center; 
+}
+
+.form-policy .name{
+    line-height: 50px;
+}
+
+/* 卫星定位原理及应用 */
+.satellite-positioning{
+    width: 90px;
+    height: 110px;
+    background: #f032e6;
+    opacity: 0.3;
+    color: black;
+    text-align: center;
+}
+
+.satellite-positioning .name{
+    padding-top: 30px;
+}
+
+
+.satellite-positioning:first-child .name{
+    padding-top: 60px;
+}
+
+/* 数字地形测量学 */
+.digital-metrology {
+    width: 90px;
+    height: 110px;
+    background: #bfef45;
+    opacity: 0.3;
+    color: black;
+    text-align: center;
+}
+
+.digital-metrology .name{
+    padding-top: 30px;
+}
+
+/* 地理信息系统原理 */
+.geographic-system{
+    width: 90px;
+    height: 110px;
+    background: #fabed4;
+    color: black;
+    text-align: center;
+}
+
+.geographic-system .name{
+    padding-top: 30px;
+}
+
+/* 一些额外的小功能 */
+table tbody tr:hover{
+    background-color: #f2f2f2;
+}
+
+table tbody tr td:hover{
+    background-color: #a89f9f;
+}
+
+
